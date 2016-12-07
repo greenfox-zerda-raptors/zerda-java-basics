@@ -1,6 +1,7 @@
 package com.greenfox.exams.java;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by aze on 2016.12.07..
@@ -18,5 +19,12 @@ public class Deck {
             }
         }
         used = new ArrayList<>();
+        Collections.shuffle(cards);
+    }
+
+    public Card draw() {
+        Card removed = cards.remove(0);
+        used.add(removed);
+        return removed;
     }
 }
