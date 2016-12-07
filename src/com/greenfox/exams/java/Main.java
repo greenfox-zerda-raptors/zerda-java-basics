@@ -1,4 +1,4 @@
-package com.greenfox.aze;
+package com.greenfox.exams.java;
 
 public class Main {
 

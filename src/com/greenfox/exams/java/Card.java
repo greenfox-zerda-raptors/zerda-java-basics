@@ -1,0 +1,24 @@
+package com.greenfox.exams.java;
+
+/**
+ * Created by aze on 2016.12.07..
+ */
+public class Card {
+    public static final String COLOR_KARO = "karo";
+
+    String color;
+    int value;
+
+    public Card(String color, int value) {
+        this.color = color;
+        if (value > 10) {
+            this.value = 10;
+        } else {
+            this.value = value;
+        }
+    }
+
+    public int getValue() {
+        return value;
+    }
+}
