@@ -23,6 +23,9 @@ public class Deck {
     }
 
     public Card draw() {
+        if (cards.size() == 0) {
+            return null;
+        }
         Card removed = cards.remove(0);
         used.add(removed);
         return removed;

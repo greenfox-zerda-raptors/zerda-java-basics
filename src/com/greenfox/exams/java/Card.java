@@ -22,6 +22,8 @@ public class Card {
         return value;
     }
 
+
+    //This was not part of the exam, just an example for using the equals override
     @Override
     public boolean equals(Object o) {
         if (o instanceof Card) {
